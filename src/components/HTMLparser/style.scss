@@ -1,0 +1,10 @@
+.generated-container {
+  display: flex;
+  flex: 1;
+  .generated-content-frame {
+    display: flex;
+    flex: 1;
+    border: none;
+    overflow-y: scroll;
+  }
+}

@@ -1,0 +1,119 @@
+.recipients-modal {
+  .recipients-modal-content {
+    max-width: 600px;
+    .recipients-modal-content-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .recipients-text-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        .title-recipients {
+          color: var(--dino-white);
+          font-size: 24px;
+          font-weight: 400;
+        }
+        .entering-rules {
+          color: var(--dino-white);
+          font-size: 14px;
+          width: 65%;
+          text-align: center;
+        }
+      }
+      .line {
+        background: var(--dino-darker-grey);
+        height: 1px;
+        width: 100%;
+        margin: 30px 0;
+      }
+      .email-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .label {
+          font-size: 16px;
+          color: var(--dino-white);
+          font-weight: 500;
+          padding: 0 10px;
+        }
+        .react-multi-email {
+          box-sizing: border-box;
+          width: 100%;
+          max-height: 400px;
+          overflow-y: scroll;
+          border: 1px solid #404144;
+          padding: 15px 20px;
+          background: #262729;
+          gap: 5px;
+          .recipients-email-input {
+            background: transparent;
+            padding: 0 !important;
+            font-size: 14px;
+            font-weight: 400;
+            height: 20px;
+            border-radius: 0;
+          }
+          .data-tag {
+            box-sizing: border-box;
+            color: var(--dino-white);
+            display: flex;
+            align-items: center;
+            background: #1C1D1F;
+            padding: 10px 15px;
+            gap: 10px;
+            border-radius: 30px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            .data-tag-handle {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              border-radius: 50%;
+              opacity: .5;
+            }
+          }
+        }
+      }
+      .credit-calc {
+        margin-bottom: 30px;
+        color: var(--dino-white);
+        font-size: 10px;
+        font-weight: 500;
+        opacity: 0.5;
+      }
+      .recipients-modal-submit {
+        width: 100%;
+        height: 50px;
+        padding: 5px 7px 5px 20px;
+        text-align: center;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        &:disabled {
+          opacity: 0.5;
+        }
+        .button-right {
+          background: #FAFAFA;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          padding: 10px 20px;
+          border-radius: 20px;
+          .button-right-icon {}
+          .button-right-text {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

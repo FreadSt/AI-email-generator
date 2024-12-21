@@ -1,0 +1,467 @@
+.pricing-page {
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  box-sizing: border-box;
+  background: #1C1D1F;
+  z-index: 0;
+  overflow-x: hidden;
+  position: relative;
+  padding: 50px 0 0;
+  color: #FAFAFA;
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 71px;
+    width: 100%;
+    height: 100%;
+    opacity: 15%;
+    z-index: -1;
+    background: url('../../assets/images/Pattern.png') #1C1D1F;
+    background-size: 26px 26px;
+  }
+
+  .pricing-page-content-box {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .pricing-page-content-header {
+    margin-bottom: 50px;
+  }
+
+  .pricing-page-title {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .pricing-page-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .pricing-page-cards-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pricing-page-card {
+    padding: 40px;
+    background: #1C1D1F;
+    border-radius: 30px;
+    border: 1px solid #28292B;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    &.popular {
+      position: relative;
+      background: #1C1D1F linear-gradient(-160deg, rgba(255, 96, 183, 0.3) 0%, rgba(255, 96, 183, 0.1) 30%, rgba(255, 96, 183, 0) 60%, rgb(28, 29, 31) 100%);
+      .card-label {
+        position: absolute;
+        top: -16px;
+        right: 20px;
+        padding: 10px 15px;
+        border-radius: 999px;
+        background: #FF60B7;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+      }
+    }
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+    }
+    .card-text {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      opacity: .7;
+      text-align: center;
+    }
+    .card-input {
+      text-align: center;
+    }
+    .card-credits {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background: #FAFAFA0D;
+    }
+    .card-amount {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+    }
+    .card-price-box {
+      text-align: center;
+    }
+    .card-price {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+    .card-price-old {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      opacity: .5;
+      text-decoration: line-through;
+    }
+    .card-discount {
+      font-size: 14px;
+      font-weight: 400;
+      color: #FF60B7;
+      margin-top: 10px;
+    }
+    .card-button {
+      height: 50px;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      &:disabled {
+        background: #FAFAFA1A!important;
+        .btn-content {
+          color: #FAFAFA80;
+        }
+      }
+    }
+  }
+
+  .pricing-page-content-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .line{
+    height: 1px;
+    width: 100%;
+    background: #28292B;
+  }
+  .pricing-page-info {
+    padding: 39px;
+    border-radius: 30px;
+    background: #1C1D1F;
+    border: 1px solid #28292B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    .pricing-table-title{
+      display: flex;
+      align-items: center;
+      align-self: flex-start;
+      gap: 12px;
+      .pricing-title-text{
+        font-size: 20px;
+      }
+    }
+    .pricing-table-body{
+      width: 100%;
+      aside{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .pricing-table-row{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 25px;
+          .price-tag-container{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+          .row-text{
+            max-width: 75%;
+            .price-description{
+              opacity: 0.7;
+              font-size: 12px;
+            }
+          }
+          .price-tag{
+            gap: 5px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(250, 250, 250, 0.05);
+            border-radius: 20px;
+            font-size: 14px;
+            min-width: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .pricing-page-feedback {
+    padding: 39px;
+    border-radius: 30px;
+    background: #1C1D1F;
+    border: 1px solid #28292B;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    .pricing-page-feedback-header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .pricing-page-feedback-title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #FAFAFA;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pricing-page-feedback-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #FAFAFA;
+      opacity: 0.7;
+    }
+    .pricing-page-feedback-form {
+      height: 120px;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 10px;
+      background-color: var(--dino-box-grey);
+      border: 1px solid var(--dino-border-grey);
+    }
+    .pricing-page-feedback-form-input {
+      height: auto;
+      padding: 0;
+      resize: none;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      border-radius: 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--dino-white);
+      &::placeholder {
+        opacity: 0.3;
+        color: var(--dino-white);
+      }
+    }
+    .pricing-page-feedback-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+      .pricing-page-feedback-footer-user-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      .pricing-page-feedback-footer-user-photo {
+        border-radius: 50%;
+        border: 1px solid #FF60B7;
+        width: 48px;
+        height: 48px;
+      }
+      .pricing-page-feedback-footer-user-name {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      .pricing-page-feedback-footer-user-email {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        opacity: .5;
+      }
+      .pricing-page-feedback-footer-button-box {
+        width: 100%;
+      }
+      .pricing-page-feedback-footer-button {
+        width: 100%;
+        font-family: Outfit, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .pricing-page-subtext {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.12px;
+    text-align: center;
+    opacity: .3;
+  }
+  .pricing-page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background: #1C1D1F;
+    border-top: 1px solid #28292B;
+    padding: 15px 20px;
+    position: sticky;
+    bottom: 0;
+  }
+  .pricing-page-footer-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #FAFAFA;
+    opacity: 0.7;
+  }
+  .pricing-page-footer-logo {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FFFFFF0D;
+    transition: all .5s;
+    text-decoration: none;
+    &:hover {
+      background: #FFFFFF;
+      .pricing-page-footer-text {
+        color: #1D1E1F;
+        opacity: 1;
+      }
+    }
+  }
+  .pricing-page-footer-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-page{
+    padding: 50px 0;
+    &:before {
+      top: 0;
+      left: 0;
+    }
+    .pricing-page-content-box{
+      max-width: 576px;
+      padding: 0 20px 70px;
+      box-sizing: border-box;
+      .pricing-page-content-footer{
+        flex-direction: column;
+      }
+      .pricing-page-content-header{
+        .pricing-page-title{
+          font-size: 36px;
+        }
+        .pricing-page-text{
+          font-size: 16px;
+          padding: 0 30px;
+        }
+      }
+      .pricing-page-cards-box{
+        flex-direction: column;
+      }
+      .pricing-page-card {
+        gap: 20px;
+        &.popular {
+          .card-label {
+            position: static;
+          }
+        }
+      }
+    }
+    .pricing-page-footer{
+      flex-direction: column;
+      position: static;
+      padding-bottom: 100px;
+      .pricing-page-footer-links{
+        flex-direction: column;
+        gap: 15px;
+        .mobile-links{
+          display: flex;
+          margin-top: 20px;
+          gap: 20px;
+        }
+        .pricing-page-footer-logo{
+          margin-top: 10px;
+        }
+      }
+    }
+    .pricing-page-feedback{
+      .pricing-page-feedback-footer{
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    .pricing-page-info {
+      padding: 30px;
+      .pricing-table-body{
+        aside{
+          .pricing-table-row{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            .price-tag-container{
+              width: 100%;
+            }
+            .row-text{
+              max-width: 100%;
+              .price-description{
+                display: inline-block;
+                margin-top: 20px;
+              }
+            }
+            .price-tag{
+              width: 100%;
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.text {
+  font-size: inherit;
+  opacity: 1;
+  color: var(--dino-white);
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+@media (max-height: 1070px) {
+  .text {
+    font-size: 12px!important;
+  }
+}

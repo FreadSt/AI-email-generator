@@ -1,0 +1,114 @@
+.mobile-menu {
+  .mobile-menu-item {
+    padding: 15px 20px;
+    &:first-child {
+      border-bottom: 1px solid #28292B;
+    }
+    &:last-child {
+      border-top: 1px solid #28292B;
+    }
+    .mobile-menu-item-icon {
+      width: 24px;
+      height: 24px;
+    }
+    .user-name {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      margin-bottom: 5px;
+    }
+    .user-email {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      opacity: .5;
+    }
+    .mobile-menu-item-inner {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .remove {
+      color: #FF5656;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .mobile-menu {
+    position: fixed;
+    background: #1C1D1F;
+    z-index: 2;
+    color: #FFFFFF;
+    border: 1px solid #28292B;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+    border-left: none;
+    border-right: none;
+    padding: 10px 10px 0;
+    .mobile-menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10px;
+      border-bottom: 1px solid #28292B;
+      &.active {
+        border-radius: 10px;
+        background: #262729;
+        border: 1px solid #404144;
+      }
+      &:last-child {
+        border-top: none;
+        border-bottom: none;
+      }
+      .mobile-menu-item-user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+      .mobile-menu-item-user-credits {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background: #262729;
+        height: 44px;
+        padding: 0 10px;
+        border-radius: 10px;
+      }
+      .mobile-menu-item-avatar {
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        &.logged {
+          border: 1px solid #FF60B7;
+        }
+      }
+      .mobile-menu-item-inner {
+        flex: 1;
+        justify-content: space-between;
+        padding: 0 10px;
+      }
+    }
+  }
+  .mobile-menu-header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .mobile-menu-header-line {
+    width: 100px;
+    height: 5px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    opacity: .1;
+  }
+}

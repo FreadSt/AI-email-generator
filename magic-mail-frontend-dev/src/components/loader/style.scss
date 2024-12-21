@@ -1,0 +1,72 @@
+.loader-container {
+  border-radius: 30px;
+  border: 1px var(--dino-dark) solid;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  background: var(--dino-dark-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 270px;
+  .loader-image {
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+  }
+  .loader-progress-image {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .loader-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    color: #FAFAFA;
+    opacity: .7;
+  }
+  .loader-progress-box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 20px;
+    border-radius: 99px;
+    padding: 2px;
+    background: #FAFAFA1A;
+    margin-bottom: 15px;
+  }
+  .loader-progress-line {
+    width: 0;
+    height: 16px;
+    border-radius: 99px;
+    background: radial-gradient(91.12% 417.75% at 4.67% 0%, #C5F04D 1.32%, #FFCC00 50%, #FF60B7 100%);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  .loader-progress-mask {
+    width: 202px;
+    height: 16px;
+    background: url('../../assets/images/progress-mask.png') repeat-x;
+    position: absolute;
+    top: 0;
+    animation: marquee 10s linear infinite;
+    &.mask-1 {
+      left: -202px;
+    }
+    &.mask-2 {}
+    &.mask-3 {
+      left: 202px;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

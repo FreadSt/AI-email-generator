@@ -1,0 +1,40 @@
+.permission-granted-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .permission-granted-modal-icon {
+    margin-bottom: 30px;
+  }
+  .permission-granted-modal-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #FF60B7;
+    margin-bottom: 10px;
+  }
+  .permission-granted-modal-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  .permission-granted-modal-button {
+    height: 50px;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 576px) {
+  .permission-granted-modal {
+    .permission-granted-modal-button {
+      width: 100%;
+    }
+  }
+}

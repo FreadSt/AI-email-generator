@@ -1,0 +1,29 @@
+.toggle-switch {
+  width: 58px;
+  height: 32px;
+  background-color: #262729;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-switch.toggled {
+  background: #C5F04D;
+}
+
+.toggle-dot {
+  width: 25px;
+  height: 25px;
+  background-color: var(--dino-border-grey);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.5px;
+  left: 3.5px;
+  transition: transform 0.3s;
+}
+
+.toggle-switch.toggled .toggle-dot {
+  transform: translateX(25px);
+  background: var(--dino-darker-grey);
+}

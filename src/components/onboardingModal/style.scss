@@ -1,0 +1,60 @@
+.onboarding-modal-container {
+  .onboarding-modal-content {
+    max-width: 360px;
+    padding: 40px 30px;
+  }
+}
+.onboarding-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .onboarding-modal-icon {
+    margin-bottom: 20px;
+  }
+  .onboarding-modal-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #FF60B7;
+    margin-bottom: 20px;
+  }
+  .onboarding-modal-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  .onboarding-modal-button {
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .onboarding-modal-button-skip {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #FAFAFA;
+    background: transparent;
+    border: none;
+    opacity: .3;
+    text-decoration: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+      opacity: .4;
+    }
+    &:active {
+      transform: scale(.95);
+      transition: .2s;
+    }
+  }
+}

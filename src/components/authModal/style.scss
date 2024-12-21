@@ -1,0 +1,43 @@
+.auth-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .auth-modal-logo {
+    margin-bottom: 40px;
+  }
+  .auth-modal-button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 50px;
+    width: 370px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: none;
+    background-color: #FFFFFF;
+    color: #1C1D1F;
+    margin-bottom: 10px;
+    &:hover {
+      opacity: .9;
+    }
+    &:active {
+      transform: scale(.95);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-modal {
+    .auth-modal-button {
+      width: 280px;
+    }
+  }
+}

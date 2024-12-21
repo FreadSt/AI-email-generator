@@ -1,0 +1,23 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  .modal-content {
+    box-sizing: border-box;
+    background: #1C1D1F;
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid #28292B
+  }
+}

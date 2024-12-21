@@ -1,0 +1,49 @@
+.placeholder{
+  flex: 1;
+  .placeholder-void{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+    background: var(--dino-dark-grey);
+    box-shadow: 10px 12px 31px rgba(28, 29, 31, 0.5);
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    gap: 20px;
+    justify-content: center;
+    .retry-box{
+      width: 100%;
+      max-width: 25vw;
+      .retry-text{
+        font-size: 14px;
+        color: var(--dino-dark);
+        opacity: 0.7;
+        text-align: center;
+        a{
+          color: var(--dino-green);
+          z-index: 2;
+          cursor: pointer;
+        }
+      }
+    }
+    .place-desc{
+      font-size: 14px;
+      color: var(--dino-snow-white);
+      span {
+        background: radial-gradient(
+                        circle at left,
+                        #C5F04D 1%,   /* Green */
+                        #FFCC00 50%,  /* Yellow */
+                        #FF60B7 100%  /* Pink */
+        );
+        -webkit-background-clip: text;  /* For WebKit-based browsers */
+        background-clip: text;          /* Standard property */
+        color: transparent;             /* Make the text color transparent */
+      }
+    }
+  }
+}
+
+

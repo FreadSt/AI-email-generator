@@ -1,0 +1,128 @@
+:root {
+  --viewport-height: 100vh;
+  --main-opacity: 0.9;
+  --dino-white: #fafafa;
+  --dino-snow-white: #fff;
+  --dino-dark: #2a2b3b; // default text color
+  --dino-grey: #eeeeee;
+  --dino-purple: #666da5;
+  --dino-green: #7e9d00;
+  --dino-green-bg-default: #7e9d00;
+  --dino-green-bg-hover: #98b133d5;
+  --dino-green-bg-pressed: #a5bb4d;
+  --dino-white-green: #eef1e1;
+  --dino-color-default: #c0c0c5;
+  --dino-text-color: #95959d;
+  --dino-grey-70: #6a6b76;
+  --dino-grey-60: #7f8089;
+  --dino-grey-50: #95959d;
+  --dino-grey-40: #aaaab1;
+  --dino-grey-30: #c0c0c5;
+  --dino-grey-20: #d4d5d8;
+  --dino-grey-10: #eaeaec;
+
+  --dino-dark-grey: #1c1d1f;
+  --dino-box-grey: #262729;
+  --dino-border-grey: #404144;
+  --dino-darker-grey: #28292b;
+  --dino-light-grey: #f4f4f5;
+  --dino-bg-default: #2a2b3b;
+  --dino-purple-box: #ff60b7;
+  // borders
+  --border-color: #e8e8e8;
+  --border-color-hover: #2a2b3b;
+  --border-color-btn-hover: #98b133d5;
+  --dino-red: #ff5656;
+  //  navbar
+  --tab-color-pressed: #2a2b3b; // pressed text color
+  --tab-color-default: #6a6b76; // default text color
+
+  // Text Editor
+  --te-icon-bg-pressed: #eaeaec; // pressed background
+  --te-icon-bg-hover: #d4d5d8; // hover background
+  --te-bg-color: #fafafa;
+
+  // Campaign
+  --bg-icon-hover: #eaeaec;
+  --campaign-default-label-color: #2a2b3b;
+  --campaign-default-info-color: #95959d;
+  --campaign-btn-border-color: #98b133d5;
+
+  // colors icon and button
+  --btn-icon-bg-default: #eaeaec; // default background
+  --btn-icon-bg-hover: #d4d5d8; // hover background
+  --btn-icon-bg-pressed: #f4f4f5; // pressed background
+  --btn-icon-color-default: #2a2b3b; // default icon color
+
+  // slider
+  --slider-bg-default: #eaeaec; // default background
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #28292b #1c1d1f;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1c1d1f;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #28292b;
+  border-radius: 20px;
+  border: 3px solid #1c1d1f;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus-visible,
+input:-webkit-autofill:focus-within,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus, {
+  -webkit-text-fill-color: #FAFAFA;
+  -webkit-box-shadow: 0 0 0 500px #262729 inset;
+}
+
+.main {
+  display: flex;
+  //width: 100vw;
+  //height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #1c1d1f;
+  font-family: Outfit, sans-serif;
+}
+
+.gradient-text {
+  background-size: 100%;
+  background: #fafafa linear-gradient(90deg, #c5f04d 1.32%, #ffcc00 52%, #ff60b7 100%) repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@supports (height: env(safe-area-inset-bottom)) {
+  :root {
+    --viewport-height: calc(100vh - env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    flex-direction: column;
+    height: var(--viewport-height);
+  }
+}

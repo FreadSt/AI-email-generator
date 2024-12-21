@@ -1,0 +1,95 @@
+.react-datepicker-wrapper{
+  .react-datepicker__input-container{
+    .react-datepicker__calendar-icon{
+      right: 20px;
+      top: 25%;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0;
+    }
+  }
+}
+
+.react-datepicker__tab-loop{
+  .react-datepicker-popper{
+    width: 100%;
+    .react-datepicker{
+      background: #1C1D1F;
+      border: 1px #404144 solid;
+      width: 100%;
+      .react-datepicker__month-container{
+        width: 100%;
+        .react-datepicker__header{
+          background: #28292B;
+          border-bottom: 1px #404144 solid;
+          .react-datepicker__day-names{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+            padding: 0 20px 15px;
+            .react-datepicker__day-name{
+              color: #FAFAFA;
+            }
+          }
+          .react-datepicker__current-month{
+            color: #FAFAFA;
+            font-family: Outfit, 'sans-serif';
+            font-weight: 400;
+            opacity: 0.7;
+          }
+        }
+        .react-datepicker__month{
+          padding: 20px;
+          box-sizing: border-box;
+          margin: 0;
+          .react-datepicker__week{
+            display: flex;
+            justify-content: space-between;
+            .react-datepicker__day{
+              font-family: Outfit, 'sans-serif';
+              font-size: 14px;
+              color: #FAFAFA;
+              &:hover{
+                color: black;
+                border-radius: 999px;
+              }
+            }
+            .react-datepicker__day--selected, .react-datepicker__day--today{
+              background: #C5F04D;
+              color: black;
+              border-radius: 999px;
+            }
+          }
+        }
+      }
+      .react-datepicker__input-time-container{
+        margin: 0;
+        padding: 0 20px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        .react-datepicker-time__input-container{
+          width: 100%;
+        }
+        .react-datepicker-time__input{
+          width: 100%;
+          margin: 0;
+          .time-input{
+            width: 100% !important;
+          }
+        }
+        .react-datepicker-time__caption{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.react-datepicker__input-container input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.react-datepicker__triangle{
+  display: none;
+}

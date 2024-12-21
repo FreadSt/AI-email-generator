@@ -1,0 +1,36 @@
+.btn {
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  color: #1C1D1F;
+  background: radial-gradient(91.12% 417.75% at 4.67% 0%, #C5F04D 1.32%, #FFCC00 50%, #FF60B7 100%);
+  .btn-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.btn-default {
+  background: radial-gradient(91.12% 417.75% at 4.67% 0%, #C5F04D 1.32%, #FFCC00 50%, #FF60B7 100%);
+  transition: all 0.3s;
+  &:hover {
+    .btn-content {
+      color: #FAFAFA;
+    }
+  }
+  &:active {
+    transform: scale(.95);
+  }
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.btn-image {
+}
